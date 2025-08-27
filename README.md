@@ -1,4 +1,4 @@
-# Lab: 4
+# Lab: 4 
 ## Part 1: Working with Integers
 
 Write a program to accept 10 integers from the user(on one line, space separated) and for each integer display: 
