@@ -11,10 +11,13 @@ public class lab4file2 {
 		int ba = str.indexOf("banana");
 		int an = str.indexOf("and");
 		int t = 0;
+		String rev = "";
 		for(int i = 0; i < str.length(); i++) {
 			if(str.substring(i, i+3).equals("the")) {t++;}
 		}
-		
+		for(int i = str.length()-1; i > -1; i--) {
+			rev += str.substring(i, i+1);
+		}
 	}
 
 }
