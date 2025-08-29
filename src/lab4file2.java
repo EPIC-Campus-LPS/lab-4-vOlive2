@@ -12,12 +12,27 @@ public class lab4file2 {
 		int an = str.indexOf("and");
 		int t = 0;
 		String rev = "";
-		for(int i = 0; i < str.length(); i++) {
+		for(int i = 0; i < str.length() -3; i++) {
 			if(str.substring(i, i+3).equals("the")) {t++;}
 		}
 		for(int i = str.length()-1; i > -1; i--) {
 			rev += str.substring(i, i+1);
 		}
+		System.out.print("Found: ");
+		if (ap != -1) {
+			System.out.print("apple ");
+		}
+		if (ch != -1) {
+			System.out.print("cherry ");
+		}
+		if (ba != -1) {
+			System.out.print("banana");
+		}
+		System.out.println("\nThe: " + (t));
+		System.out.println("And: " + (an != -1));
+		System.out.println("Reverse: " + rev);
+
+
 	}
 
 }
