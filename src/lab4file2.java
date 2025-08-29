@@ -6,6 +6,15 @@ public class lab4file2 {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Input: ");
 		String str = scan.nextLine();
+		int ap = str.indexOf("apple");
+		int ch = str.indexOf("cherry");
+		int ba = str.indexOf("banana");
+		int an = str.indexOf("and");
+		int t = 0;
+		for(int i = 0; i < str.length(); i++) {
+			if(str.substring(i, i+3).equals("the")) {t++;}
+		}
+		
 	}
 
 }
